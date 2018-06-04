@@ -3,12 +3,13 @@
 	<head>		
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta charset="utf-8">
-		<link rel="stylesheet" href="https://github.com/JamesShyuu/resume/blob/master/bootstrap.css">
-		<link rel="stylesheet" href="https://github.com/JamesShyuu/resume/blob/master/bootstrap.min.css">
-		<link rel="stylesheet" href="https://github.com/JamesShyuu/resume/blob/master/font-awesome.min.css">
+		<link rel="stylesheet" href="css/bootstrap.css">
+		<link rel="stylesheet" href="css/bootstrap-theme.min.css">
+		<link rel="stylesheet" href="css/font-awesome.min.css">
 		<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-		<link rel="stylesheet" href="https://github.com/JamesShyuu/resume/blob/master/style.css">
-
+		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="css/style.css">
+		
 		<style>
 			h2 ,h4 {font-family: "Microsoft JhengHei UI Light"; src:url(../fonts/msjh.ttc); 
 				font-weight: bold; 
@@ -17,6 +18,11 @@
 			}
 			h3{
 				font-family: "Microsoft JhengHei UI Light"; src:url(../fonts/msjh.ttc);
+				font-weight: bold;
+			}
+			h5{
+				color: #822d2b;
+				font-weight: bold;
 			}
 		</style>
 		<title>履歷</title>
@@ -27,19 +33,19 @@
   			<div class="">
   				<ul class="re_ulStyle">
   					<li class="re_lilogo">
-						<a class="clickHide re_titleBtn"><img src="images/my_name.png" class="re_logoimg"></a>
+						<a href="#top" class="clickHide re_titleBtn"><img src="images/my_name.png" class="re_logoimg"></a>
 					</li>
 					<li class="re_liStyle">
-						<a href="" class="clickHide re_titleBtn" onclick="hide()">關於我</a>
+						<a href="#aboutMe" class="clickHide re_titleBtn" onclick="hide()">關於我</a>
 					</li>
   					<li class="re_liStyle">
-  						<a href="" class="re_titleBtn">教育與訓練</a>
+  						<a href="#education" class="re_titleBtn">教育與訓練</a>
   					</li>
   					<li class="re_liStyle">
-  						<a href="" class="re_titleBtn">經驗</a>
+  						<a href="#Exe" class="re_titleBtn">經驗</a>
   					</li>
   					<li class="re_liStyle">
-  						<a href="" class="re_titleBtn">作品集</a>
+  						<a href="#portfolio" class="re_titleBtn">作品集</a>
   					</li>
   				</ul>
   				<!-- Single button -->
@@ -48,22 +54,23 @@
 						<i class="fa fa-bars" aria-hidden="true"></i>
 					</button>
 					<ul class="dropdown-menu re_liSmall" role="menu" >
-						<li><a href="#">關於我</a></li>
-						<li><a href="#">教育與訓練</a></li>
-						<li><a href="#">經驗</a></li>
-						<li><a href="#">作品集</a></li>
+						<li><a href="#aboutMe">關於我</a></li>
+						<li><a href="#education">教育與訓練</a></li>
+						<li><a href="#Exe">經驗</a></li>
+						<li><a href="#portfolio">作品集</a></li>
 					</ul>
 				</div>
   			</div>
 		</nav>
 
-		<section>
+		<section id="top">
 			<div class="re_content hp_bgImg" id="cc">
 				<img src="">
 				<h1 class="hp_title" style="color: white;">許晨光履歷</h1>
 			</div>
 		</section>
 
+		<div id="aboutMe"></div>
 		<section class="am_main_box" >
 			<h2 class="am_title" >關於我</h2>
 			<div class="am_full_gallery">
@@ -85,26 +92,50 @@
 							<li>姓名：許晨光 CHEN-KUANG, HSU</li>
 							<li>出生日期：1989年12月8日</li>
 							<li>聯絡電話：0953-864820</li>
-							<li>Email:jamesshyuu@gmail.com</li>
+							<li>Email: jamesshyuu@gmail.com</li>
 						</ul>
 					</div>
 					<div class="col-md-8 am_intro_box">
 						<h3>自傳</h3>
-						<p>大學學習</p>
-<p>我就讀文化大學心理輔導系。在學校的學習下，我學習到了各樣心理學的知識，和分組作報告的能力。在分組報告中，我學習到如何收尋資料與整理資料，並且與他人分工與討論的學習。另外我對於繪圖軟體課餘時間自學Adobe繪圖軟體，如Photoshop、Illustrator。在學期間我分別去過天主教懷仁全人發展中心與和馨單親家庭中心實習過。在這一年多的實習中我不僅接觸到了辦公室業務，還接處到了如活動布置與推廣和宣傳品製作，特別是文宣製作，因為我過去到大學皆有學習繪圖軟體運用，因此能幫機構修改與製作，並且也教機構其他同事使用軟體。另外在課業之餘，我還參加了教會的校園社團。在社團裡，我負責攝影、文宣製作，和一些宣傳的活動。</p>
-<p>大學畢業</p>
-<p>大學剛畢業時，我有嘗試過攝影方面的工作，那時我做攝影助理，在公司中我學習到專業攝影機的運用。然而經由一段時間的思考與興趣考量，覺得攝影和影視可能不是我未來想，我選擇轉換跑道，因此我參與了職訓課程，希望往網業設計與程式開發發展。因此參與了北科大的Java軟體人才養成班。在這課程中，我學到了資訊概論、前端設計、java程式開發。啟發我對前端的熱誠來自這課程的期末專題，由於我在專題中負責前端設計，進而對前端的Layout佈局、css的運用有更深入的著墨。</p>
-<p>未來期許</p>
-<p>
-未來希望從事前端的工作，另外會用工作之餘進修。特別加強前端的知識與專業，並且我相信除了職訓所學的專業知識外，過去我對繪圖軟體知識，與繪畫、攝影的美學培養，都能成為我未來在工作上的助力。另外我也相信過去大學所學的輔導知識與團體報告溝通的能力，也會是我在工作團隊中重要的能力，讓團隊有良好的互動與溝通。
-</p>
+						<p style="font-weight: bold;">成長背景</p>
+<p>我成長於一個溫馨、美好的家庭，父母與姊姊一直是我最大支持力量的啦
+	啦隊。從小全家就經常一起去參與各類藝術展覽與音樂會，培養出對人文與藝
+	術的熱愛，另外我也學習油畫及鋼琴、豎笛等樂器，確實在繁忙生活中找到心
+	靈出口。</p>
+<p style="font-weight: bold;">心理輔導的學習</p>
+<p>因著對於人文關懷與藝術欣賞的高度興趣，選讀並畢業於中國文化大學心
+	理輔導系。在大學的訓練中，學習到了各樣心理學與行為意識的知識，並透過
+	專題分組建立個人簡報製作、資料收集與整理，團隊分工與討論的經驗，這些
+	歷練將強化職場上的合作與溝通能力，而心理與輔導的知識，更可以在團隊運
+	作上有所加分。在學習期間，曾赴天主教懷仁全人發展中心與和馨單親家庭中
+	心實習，近一年多的實習中，不僅接觸到了行政業務，也涉略到活動布置與推
+	廣和宣傳品製作。</p>
+<p style="font-weight: bold;">多媒體的經驗</p>
+<p>由於對電腦與媒體應用的興趣，於大學時期便自己摸索
+	Photoshop、Illustrators，後來也考取Photoshop的國際證照。生活中自主的研
+	究與探索也相當廣泛，舉凡攝影、影片剪接、DM製作和油畫等。為擴展實務經
+	驗，主動協助學校社團製作活動DM。</p>
+<p style="font-weight: bold;">軟體產業經驗</p>
+<p>由於個人興趣與生涯考量，後來決定投入軟體產業。因此參與了國立台北
+	科技大學網業設計與程式開發為期半年的職訓課程，透過業界專業師資的介紹
+	，很快掌握網業設計與程式開發技術，並且協助完成一個完整有趣的團隊專題
+	。</p>
+<p>結訓後的第一份工作，在碩利資訊股份有限公司，參與兩個專案。首先是
+	全球人壽行動投保開發，負責前段工程，工作主要協助程式開發與修正錯誤，
+	透過積極參與團隊合作與討論，讓我在軟體產業有很多的成長。完成第一個專
+	案後接著參加愛物聯公司的專案開發，主要負責項目除了前端工程開發，也協
+	助美化專案UIUX。</p>
+<p style="font-weight: bold;">未來期許</p>
+<p>隨著科技不斷演化，軟體開發一直會是重要產業，希望自己在此領域中不
+	斷精進
+	，也希望有機會進入貴公司，在新的團隊中發揮所長，協助專案開發。</p>
 					</div>
 				</div>
 			</div>
 			<div class="am_bottom"></div>
 		</section>
 		
-
+		<div id="education"></div>
 		<section class="edu_main_box">
 			<h2>教育與訓練</h2>
 			<div class="container edu_content_box">
@@ -145,53 +176,10 @@
 						</p>
 					</div>
 					<div class="col-md-4 edu_content">
-						<p>2013.7~2013.8</p>
+						<p>2013.7~2013.9</p>
 					</div>
 				</div>
 			</div>
-
-			<!-- <div class="edu_bg_img">
-				<div class="edu_box">
-					<a href="" data-toggle="modal" data-target="#myDepoma1">
-						<img src="images/gra1.jpg" class="edu_box_img1">
-					</a>
-					<img src="images/depo3.jpg" class="edu_box_img1">
-					<img src="images/depo1.jpg" class="edu_box_img1">
-					<img src="images/depo4.jpg" class="edu_box_img2">
-				</div>
-			</div> -->
-
-			<!-- <div id="carousel-example-generic" class="carousel slide " data-ride="carousel">
-				<ol class="carousel-indicators">
-					<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-					<li data-target="#carousel-example-generic" data-slide-to="1"></li>
-					<li data-target="#carousel-example-generic" data-slide-to="2"></li>
-				</ol>
-
-				<div class="carousel-inner edu_bg_img" role="listbox">
-					<div class="item active edu_carousel">
-						<img src="images/gra1.jpg" alt="" class="edu_depo_img1">
-						<div class="carousel-caption edu_depo_title">
-							<p class="">中國文化大學心輔系</p>
-						</div>
-					</div>
-					<div class="item edu_carousel">
-						<img src="images/depo1.jpg" alt="..." class="edu_depo_img1">
-						<div class="carousel-caption edu_depo_title">
-							<p class="">中國文化大學心輔系</p>
-						</div>
-					</div>
-					...
-				</div>	
-				<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-					<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-					<span class="sr-only">Previous</span>
-				</a>
-				<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-					<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-					<span class="sr-only">Next</span>
-				</a>
-			</div> -->
 		</section>
 
 		<section class="ski_main_bg">
@@ -223,6 +211,12 @@
 					</li>
 					<li class="ski_li">
 						<div>
+							<img src="images/angular-js.sh.png" class="ski_gallery_img">
+							<p>AngularJS</p>
+						</div>
+					</li>
+					<li class="ski_li">
+						<div>
 							<img src="images/Java_logo.png" class="ski_gallery_img">
 							<p>Java</p>
 						</div>
@@ -243,6 +237,7 @@
 			</div>
 		</section>
 
+		<div id="Exe"></div>
 		<section class="exe_main_box">
 			<h2 class="exe_content_title">經驗</h2>
 			<div class="container ">
@@ -278,20 +273,27 @@
 						<p>2013.4~2013.6</p>
 					</div>
 				</div>
-				<div class="row">
+				<!-- <div class="row">
 					<div class="col-md-8 exe_cotent">
 						<p>心波力書店工讀</p>
 					</div>
 					<div class="col-md-4 exe_cotent">
 						<p>2013.10~2014.1</p>
 					</div>
+				</div> -->
+				<div class="row">
+					<div class="col-md-8 exe_cotent">
+						<p>碩利資訊股份有限公司</p>
+					</div>
+					<div class="col-md-4 exe_cotent">
+						<p>2017.1~2018.3</p>
+					</div>
 				</div>
-				
 			</div>
 		</section>
 		
 
-		<section class="">
+		<section class="" id="portfolio">
 			<div class="re_content pf_bgImg" >
 				<h1 class="hp_title">作品集</h1>
 			</div>
@@ -340,30 +342,60 @@
 			</div>
 		</section>
 
-		<!-- <section>
-			<div class="container-fluid">
-				<div class="row trybox">
-					<div class="col-md-3 col-xs-6 try1">
-						
+		<!-- <section class="skin">
+			<div class="videoSkin">
+				<video width="600" height="400" style="" id="myMovie">
+					<source src="videos/myVideo1.mp4" type="">
+				</video>
+			</div>
+			<div class="barSkin">
+				<div class="outsideBar">
+					<div id="progressBar"></div>
+				</div>
+				<div class="timeBar">00:00/00:00</div>
+			</div>
+			<nav class="videoNav">
+				<div>
+					<img src="images/play-button.png" id="playBtn" width="50px" height="50px">
+				</div>
+				<div>
+					<img src="images/stop.png" id="stopBtn" width="50px" height="50px" onclick="">
+				</div>
+				<div>
+					<img src="images/speaker_up.png" id="upBtn" width="50px" height="50px" onclick="">
+				</div>
+				<div>
+					<img src="images/speaker_down.png" id="downBtn" width="50px" height="50px" onclick="">
+				</div>
+			</nav>
+		</section> -->
+
+		<section>
+			<div class="container painting_box">
+				<div class="row">
+					<h2>手繪作品</h2>
+					<div class="col-md-6 painting_box_padding">
+						<div class="painting_button1">
+							<a href="" data-toggle="modal" data-target="#myPainting1">
+								<div class="bg_pic pic1 painting_padding">
+									<font>油畫</font>
+								</div>
+							</a>
+						</div>
 					</div>
-					<div class="col-md-3 col-xs-6 try2">
-						
-					</div>
-					<div class="col-md-3 col-xs-6 try3">
-						
-					</div>
-					<div class="col-md-3 col-xs-6 try4">
-						
+					
+					<div class="col-md-6 painting_box_padding">
+						<div class="painting_button1">
+							<a href="" data-toggle="modal" data-target="#myPainting2">
+								<div class="bg_pic pic2 painting_padding">
+									<font>素描</font>
+								</div>
+							</a>
+						</div>
 					</div>
 				</div>
 			</div>
 		</section>
- -->
-
-		<!-- Button trigger modal -->
-<!-- <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
-	Launch demo modal
-</button> -->
 
 		<!-- Modal -->
 		<div class="modal fade" id="myDepoma1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
@@ -445,6 +477,12 @@
 						</div>
 						<div class="mod_content3_2">
 							<img src="images/motobike_char.png" class="mod_img1_2">
+						</div>
+						<div>
+							<h5>專案說明</h5>
+							<p>由朋友委託製作的影片素材，用於宣傳影片中</p>
+							<h5>概念</h5>
+							<p>概念由案主題供，由於該工作室已拍攝機車為主，因此案主希望將機車與攝影機上下結合。而在設計上以簡單的向量結構設計</p>
 						</div>
 					</div>
 				</div>
@@ -543,19 +581,85 @@
 									提供專家編寫的旅遊專欄，讓您有更多的旅遊靈感
 									後台管理系統對會員、景點、旅行規劃、心得分享(評價)等各項目進行管理
 								</p>
-								<a href=""></a>
+								<a href="https://jamesshyuu.github.io/james_work/home_page.html" >
+									觀看網站&nbsp;&nbsp;
+									<i class="fa fa-angle-right" aria-hidden="true"></i>
+									<i class="fa fa-angle-right" aria-hidden="true"></i>
+									<i class="fa fa-angle-right" aria-hidden="true"></i>
+								</a>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
+
+		<div class="modal fade" id="myPainting1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">
+							<span aria-hidden="true">&times;</span><span class="sr-only">Close</span>
+						</button>
+						<h4 class="modal-title" id="myModalLabel" style="color: #b43434;">油畫作品</h4>
+					</div>
+					<div class="modal-body painting_imgbox">
+						<img src="images/oil3.jpg" class="painting_mod_img1">
+						<img src="images/oil5.jpg" class="painting_mod_img1">
+					</div>
+					<div class="modal-body painting_imgbox">
+						<img src="images/oil1.jpg" class="painting_mod_img1">
+						<img src="images/oil2.jpg" class="painting_mod_img1">
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="modal fade" id="myPainting2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">
+							<span aria-hidden="true">&times;</span><span class="sr-only">Close</span>
+						</button>
+						<h4 class="modal-title" id="myModalLabel" style="color: #b43434;">素描作品</h4>
+					</div>
+					<div class="modal-body painting_imgbox">
+						<img src="images/sketch1.jpg" class="painting_mod_img2">
+						<img src="images/sketch2.jpg" class="painting_mod_img2">
+					</div>
+					<div class="modal-body painting_imgbox">
+						<img src="images/sketch3.jpg" class="painting_mod_img2">
+						<img src="images/sketch4.jpg" class="painting_mod_img2">
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="modal fade" id="myContact" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">
+							<span aria-hidden="true">&times;</span><span class="sr-only">Close</span>
+						</button>
+						<h4 class="modal-title" id="myModalLabel" style="color: #b43434;">聯絡我</h4>
+					</div>
+					<div class="modal-body" style="text-align: center;">
+						<p>Email: jamesshyuu@gmail.com</p>
+						<p>電話: 0953-864820</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<a href="#top" class="cd-top">Top</a>
 		
 		<footer>
 			<div class="container-fluid foot_box">
 				<div class="foot_p">
 					<span>
-						<a href="">
+						<a href="" data-toggle="modal" data-target="#myContact">
 							<i class="fa fa-envelope fa-2x" aria-hidden="true"></i><span class="foot_span1">聯絡我</span>
 						</a>
 					</span>
@@ -565,100 +669,6 @@
 			</div>
 		</footer>
 		
-
-		<!-- <section class="pf_main_box">
-			<div>
-				<figure class="pf_gallery_img">
-					
-				</figure>
-			</div>
-		</section> -->
-
-		<!-- <section class="am_main">
-			<div class="am_mainPage">
-			<h2>關於我</h2>
-				<div class="container-fluid">
-					<div class="row">
-						<div class="col-md-2">
-							<p>個人資料</p>
-						</div>
-						<div class="col-md-10">
-							<p>姓名：許晨光 CHEN-KUANG, HSU</p>
-							<p>聯絡電話：0953-864820</p>
-							<p>地址：新北市淡水區中山北路2段381巷111號14樓</p>
-							<p>E-mail：jamesshyuu@gmail.com</p>
-							<p>學歷：中國文化大學心理輔導系</p>
-							<p>兵役：役畢</p>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-md-2">
-							<p>訓練</p>
-						</div>
-						<div class="col-md-6">
-							<p>國立臺北科技大學 Java&Android程式設計人才養成班</p>
-							<p>Adobe Photoshop 證照訓練</p>
-							<p>巨匠電腦多媒體人才培訓班</p>							
-						</div>
-						<div class="col-md-4">
-							<p>2016.4~2016.10</p>
-							<p>???</p>
-							<p>2015.8~2015.10</p>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-md-2">
-							<p>經歷</p>
-						</div>
-						<div class="col-md-10">
-							<p>新北市馨和單親家庭服務中心實習&nbsp;2010.11~2011.1</p>
-							<p>天主教懷仁全人發展中心實習&nbsp;2012.10~2013.5</p>
-							<p>光耀科技傳播公司-攝影助理&nbsp;2015.8~2015.9</p>							
-						</div> -->
-						<!-- <div class="col-md-4">
-							<p>2010.11~2011.1</p>
-							<p>2012.10~2013.5</p>
-							<p>2015.8~2015.9</p>
-						</div> -->
-					<!-- </div>
-					<div class="row">
-						<p>專長</p>
-						<div class="col-md-3">
-							<img src="images/HTML5.png" class="am_logo">
-						</div>
-						<div class="col-md-3">
-							<img src="images/css3.png" class="am_logo">
-						</div>
-						<div class="col-md-3">
-							<img src="images/javascript_logo.png" class="am_logo">
-						</div>
-						<div class="col-md-3">
-							<img src="images/apple-touch-icon.png" class="am_logo">
-						</div>
-					</div>
-					<div class="row">						
-						<div class="col-md-3">
-							<img src="images/Java_logo.png" class="am_logo">
-						</div>
-						<div class="col-md-3">
-							<img src="images/ps.jpg" class="am_logo">
-						</div>
-						<div class="col-md-3">
-							<img src="images/ill.png" class="am_logo">
-						</div>
-						<div class="col-md-3">
-							<img src="images/apple-touch-icon.png" class="am_logo">
-						</div>
-					</div>
-				</div>
-			</div>
-		</section> -->
-
-		<!-- <section>
-			<div>
-				<h1>自傳</h1>
-			</div>
-		</section> -->
 
 		<script src="js/js1.12.4.js"></script>
 		<script src="js/jqueryuiv1.12.0.js"></script>
@@ -671,17 +681,10 @@
 				document.getElementsById('cc').style.display = 'none';
 
 			}
-
-			// $(document).ready(function()){
-			// 	$("#myContent1").hover(function(){
-			// 		$(this).append("<p>456456</p>")
-			// 	})
-			// }
-			
-
 			
 		</script>
 		<script src="js/style.js"></script>
+		<script src="js/sidebutton.js"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	</body>
